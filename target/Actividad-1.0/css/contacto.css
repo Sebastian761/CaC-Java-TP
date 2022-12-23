@@ -1,0 +1,67 @@
+html body{
+    background: rgb(222, 244, 244);
+    height: 100vh;
+}
+
+.logo{
+    bottom: 3%;
+}
+
+.nav__ul{
+    margin-top: .3em;
+}
+
+.contacto{
+    padding-top: 15em;
+    text-align: center;
+    font-family: 'Unbounded', cursive;
+    font-weight: 100;
+    color: rgb(3, 9, 54);
+    text-shadow: 3px 8px 15px rgb(130, 191, 236);
+}
+
+main{
+    background-image: url(../assets/contacto/mesa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50em;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    height: 65%;
+    text-align: center;
+    align-items:flex-end;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+
+div .card{
+    box-shadow: 1px 10px 20px rgb(6, 36, 90);
+    border: 1px solid rgb(43, 136, 243)
+}
+
+h1, p{
+    margin: 0;
+    padding: 0;
+}
+.contacto p{
+    font-size: 1.2em;
+}
+
+h1{
+    padding: .5em;
+}
+
+div .card-header{
+    font-weight: 700;
+    border-bottom: 1px solid rgb(43, 136, 243);
+    background: rgb(201, 231, 226);
+}
+
+.card-title{
+    font-weight: 700;
+    color: rgb(16, 60, 82);
+}

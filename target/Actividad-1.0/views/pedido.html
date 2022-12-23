@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/pedido.css">
+    <link rel="stylesheet" href="./css/spinner.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('0bU4qjecNcP2aiuNx')
+    </script>
+</body>
+    <title>Tu pedido</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav__ul">
+                <li class="nav__li menu"><a href="./Index.html">Inicio</a></li>
+                <li class="nav__li menu"><a href="./informacion.html">Quienes  somos</a></li>
+                <li class="nav__li menu"><a href="./contacto.html">Contactanos</a></li>
+                <li class="nav__li menu"><a href="./menu.html" target="_blank">Menú </a></li>
+                <li class="nav-item pedido">
+                    <figure>
+                        <img src="./assets/js/menu.png" alt="pedido" class="pedir">
+                        <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
+                            <i id="carritoContenedor">0</i>
+                        </a>
+                    </figure>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <button id="activarFuncion" class="btn btn-secondary boton">¡Click!</button>
+
+    <main>
+        <div class="liniecita"></div>
+        <div class="contenedor">
+            <div class="row">
+                <div class="col-6 imagencita">
+                    <img src="./assets/pedido/restaurant.jpg" alt="restaurant" class="fondo">
+                </div>
+                <div class="col-6 formu">
+                    <h2>Realizar Pedido</h2>
+                <form id="procesar-pago" method="POST">
+                        <div class="row cliente">
+                            <div class="col-2">
+                                <label for="cliente">Cliente :</label>
+                            </div>
+                            <div class="col-10 input">
+                                <input type="text" class="form-control" id="cliente"
+                                    placeholder="Ingresa nombre cliente" name="persona">
+                            </div>
+                        </div>
+                        <div class="row correo">
+                            <div class="col-2">
+                                <label for="email">Correo :</label>
+                            </div>
+                            <div class="col-10 input">
+                            <input type="text" placeholder="Ingrese el correo del cliente"  id="correo" class="form-control"  name="email" id="email.id">
+                            </div>
+                        </div>
+
+                        <div id="carrito" class="form-group table-responsive">
+                            <table class="table" id="listaPedido">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Sub Total</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="4" scope="col" class="text-right">TOTAL
+                                            <p id="totalProceso"></p>
+                                        </th>
+                                    </tr>
+                                </tfoot>
+                                
+                            </table>
+                        </div>
+
+                        <div class="d-none" id="spinner">
+                            <div class="sk-folding-cube">
+                                <div class="sk-cube1 sk-cube"></div>
+                                <div class="sk-cube2 sk-cube"></div>
+                                <div class="sk-cube4 sk-cube"></div>
+                                <div class="sk-cube3 sk-cube"></div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between botones">
+                            <div class="col-md-4 mb-2">
+                                <a href="index.html" class="btn btn-info btn-block botoncito">Volver al inicio</a>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <input type="submit" class="btn btn-success btn-block" id="button" value="Finalizar pedido" >
+                            </div>
+                        </div>
+                </form>
+            </div>
+                </div>
+            </div>
+        <div>   
+    </main>
+
+
+
+    <script src="./js/index.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</html>

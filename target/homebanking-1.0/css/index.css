@@ -1,0 +1,415 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+/* Cabecera de la pagina  */
+
+    header{
+        color: #FFF;
+        height: 7%;
+        background: #273746;
+        opacity: .9;
+        position: fixed;
+        z-index: 500;
+        width: 100%;
+
+    }
+
+    ul a{
+        color: #FFF;
+        text-decoration: none;
+        transition: all 1s;
+    }
+
+    ul a:hover{
+        color: #D5D8DC;
+    }
+
+    .logo{
+        position: absolute;
+        width: 4em;
+        left: 1%;
+    }
+
+    .nav__ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        max-width: 100%;
+        margin-right: 2em;
+    }
+
+    .nav__ul > li{
+        padding: 1em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        border-bottom: 2px solid transparent;
+        transition: all 1s;
+    }
+
+    .nav__li:hover{
+        color: #D5D8DC;
+        border-bottom: 2px solid #FFF;
+    }
+
+    .log-on{
+        position: absolute;
+        top: 20%;
+        left: 92%;
+    }
+
+    .log-on a{
+
+    }
+    
+    .out{
+        
+    }
+
+    .out button{
+        background:#273746;
+        color: #FFF;
+        border: 1px solid #FFF
+    }
+    
+    
+
+/* Parte principal de la página  */
+
+    main{
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .imagen_fondo{
+        background-image: url(../assets/index/fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 45em;
+    }
+    .linea-container{
+        position: relative;
+    }
+
+    .linea{
+        width: .5em;
+        height: 34em;
+        background: lightblue;
+        position: absolute;
+        left: 101%;
+    }
+
+    .linea-horizontal{
+        width: 100%;
+        height: .5em;
+        background: lightblue;
+        position: absolute;
+    }
+    
+    .imagen_fondo > div{
+        position: absolute;
+        top: 24%;
+        left: 13%;
+        text-align: center;
+    }
+
+    
+    
+    div > .titulo{
+        color: rgb(248, 222, 24);
+        font-size: 4em;
+        font-family: 'Dancing Script', cursive;
+    }
+
+/* Tres columas con texto e icono */
+
+        .info__row{
+            text-align: center;
+            flex-wrap: wrap;
+            height: 50em;
+            padding: 3em 12em;
+        }
+
+        .info__row img{
+            width: 8em;
+        }
+
+        .col-4{
+            min-width: 260px;
+        }
+
+        .col-4 h2{
+            font-weight: 700;
+            padding-top: 1em;
+            font-size: 1.5em;
+        }
+
+        .col-4 p{
+            color: #000;
+            font-size: 1.1em;
+            font-family: 'Montserrat';
+        }
+
+    /* Historia del restaurante */
+
+    .historia{
+            background-image: url(../assets/index/restaurant.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 45em;
+    }
+
+    .historia div{
+        color: rgb(255, 255, 255);
+    }
+
+
+    .historia .texto{
+        font-size: 1.3em;
+        font-family: 'Montserrat';
+        color: #FFF;
+        line-height: 1.8em;
+    }
+
+    .texto h2{
+        padding-bottom: 1em;
+        font-weight: 900;
+        font-family: 'Montserrat';
+    }
+
+    .texto .lema{
+        font-weight: 700;
+        padding-bottom: .8em;
+    }
+
+    .texto{
+        padding-left: 4em;
+        height: 45em;
+        width: 50%;
+        display: flex;
+        justify-content: right;
+        padding-top: 7em;
+        flex-direction: column;
+    }
+
+    
+    /* Division 2 columnas (Parte derecha) */
+
+        section > .row{
+            width: 100%;
+            margin-left: 0;
+        }
+        
+        .row{
+            height: 34em;
+            width: 100%;
+            flex-direction: row-reverse;
+        }
+        
+        .pedir{
+            text-align: center;
+            position: relative;
+        }
+        
+        .pedir > p{
+            color: #000;
+            padding-top: 11.5em;
+            font-weight: 300;
+            font-size: 1.5em;
+            font-family: 'Pacifico', cursive;
+        }
+        .frase{
+            font-family: 'Pacifico', cursive;
+            font-size: 2em;
+            font-weight: 800;
+        }
+
+        
+        .icon{
+            position: absolute;
+            width: 6em;
+            top: 35%;
+            left: 45%;
+        }
+
+        div .pedido{
+            margin-top: 1.5em;
+            background: lightblue;
+            color: #273746;
+            border: 1px solid rgb(8, 110, 144);
+            width: 12em;
+            height: 3em;
+            border-radius: 3em;
+        }
+
+        div .bajo{
+            margin-top: -.2em;
+        }
+
+    /* Division 2 columnas (Parte izquierda) */    
+
+        form > input {
+            background: transparent;
+            border: 2px solid #FFF;
+            color: #FFF;
+            margin: 1em 0;
+            width: 60%;
+        }
+
+        select > option{
+            background: #273746;
+            color: #FFF;
+            border: 2px solid #FFF;
+            transition: all 1s;
+        }
+
+        .row > .reservar{
+            background: #273746;
+            text-align: center;
+        }
+
+        .info{
+            padding: 1em;
+            color: #FFF;
+        }
+
+
+        .info > p{
+            font-family: 'Montserrat';
+            color: #FFF;
+            padding-top: 2em;
+            font-size: 1.2em;
+        }
+
+
+        .info > h2{
+            font-size: 2.2em;
+            font-weight: 600;
+        }
+
+        .reserva{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .formulario{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            outline: #FFF;
+        }
+
+        .formulario > select{
+            margin: 1em 0;
+            width: 60%;
+        }
+
+        div > .pide{
+            width: 15em;
+            padding: .5em;
+            color: #0f2a44;
+            font-weight: 500;
+            background-color: rgb(222, 231, 254);
+        }
+
+
+    /* Galerria con menu interactivo */
+
+        .gallery{
+            padding: 2em;
+            height: 29em;
+            background:#dbeaf7;
+            text-align: center;
+            width: 100%;
+        }
+
+        .gallery_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        
+        .gallery_container figure{
+            max-width: 16%;
+            margin: .2em 1em;
+            padding: 2em;
+            opacity: 1;
+            transition: all .5s ease-out;
+            position: relative;
+            cursor: pointer;
+        }
+
+        figure img{
+            border-radius: 10px;
+            box-shadow: 10px 15px 25px rgba(0, 0, 0, .3);
+            width: 100%;
+            height: 100%;
+        }
+
+        figure .capa{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            top: 11%;
+            left: 10.5%;
+            color: #FFF;
+            width: 14.5em;
+            height: 14.4em;
+            background: #272d33;
+            border-radius: 10px;
+            transition: all .5s;
+            opacity: 0;
+        }
+
+        .capa p{
+            color: #FFF;
+            font-family: 'Montserrat';
+            font-size: 1em;
+        }
+
+        figure .capa:hover{
+            opacity: .8;
+        }
+
+
+    /* Footer */
+
+        footer{
+            background: #273746;
+            height: 10%;
+            color:#D5D8DC;
+            font-size: 1.25em;
+            font-weight: 600;
+        }
+        
+        .footer__ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+        
+        .footer__li{
+            margin-top: .5em;
+            padding: 1em 3em;
+            transition: all 1s;
+        }
+        
+        .footer__li:hover{
+            color: cornsilk;
+        }
+
+
+
+
+
