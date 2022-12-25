@@ -38,8 +38,8 @@
                 <a class="btn btn-primary inicio" href="/homebanking/views/login.jsp" target="_blank" style="display: <%= isLogin?"none":"initial" %>">Iniciar sesion</a>
             </div>
             <div class="out" style="position: absolute; top: 25%; right: 5%;">                
-                <button type="button" class="btn btn-primary inicio" style="display: <%= !isLogin?"none":"initial" %>">Mi cuenta</button>
-                <button type="button" class="btn btn-primary inicio" style="display: <%= !isLogin?"none":"initial" %>">salir</button>
+                <a href="/homebanking/usuario/viewUser" class="btn btn-primary inicio" style="display:<%= !isLogin?"none":"initial" %>">Mi cuenta</a>
+                <a href="/homebanking/usuario/logoutUser" class="btn btn-primary inicio" style="display: <%= !isLogin?"none":"initial" %>">salir</a>
             </div>
         </nav>
     </header>
@@ -51,7 +51,7 @@
     %>
 
     <main class="container d-flex justify-content-center align-items-center">
-            <form action="/usuario/createUser" style="margin-top: 15em;">
+            <form action="/homebanking/usuario/createUser" style="margin-top: 15em;">
                 <div class="mb-3">
                   <label for="username" class="form-label">Usuario:</label>
                   <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario" name="user">

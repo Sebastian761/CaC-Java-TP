@@ -17,9 +17,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <title>Login </title>
+        <title>User </title>
     </head>
-    <body>
+    <body style=" background: lightsteelblue;">
         <header>
         <nav>
             <img class="logo" src="/homebanking/assets/index/comida.png" alt="icono_plato">
@@ -37,11 +37,11 @@
                 <li class="nav__li"><a href="/homebanking/views/menu.html" target="_blank">Menú </a></li>
             </ul>
             <div class="log-on">                
-                <a class="btn btn-primary inicio" style="display:<%= isLogin?"none":"initial" %>">Iniciar sesion</a>
+                <a href="/homebanking/views/login.jsp" class="btn btn-primary inicio" style="display:<%= isLogin?"none":"initial" %>">Iniciar sesion</a>
             </div>
             <div class="out" style="position: absolute; top: 25%; right: 5%;">                
-                <button type="button" class="btn btn-primary inicio" style="display:<%= !isLogin?"none":"initial" %>">Mi cuenta</button>
-                <button type="button" class="btn btn-primary inicio" style="display:<%= !isLogin?"none":"initial" %>">salir</button>
+                <a href="/homebanking/usuario/viewUser" class="btn btn-primary inicio" style="display:<%= !isLogin?"none":"initial" %>">Mi cuenta</a>
+                <a class="btn btn-primary inicio" href="/homebanking/usuario/logoutUser" style="display:<%= !isLogin?"none":"initial" %>">salir</a>
             </div>
         </nav>
     </header>

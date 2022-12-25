@@ -40,8 +40,8 @@
                 <a class="btn btn-primary inicio" style="display:<%= isLogin?"none":"initial" %>" href="/homebanking/views/login.jsp" target="_blank">Iniciar sesion</a>
             </div>
             <div class="out" style="position: absolute; top: 25%; right: 5%;">                
-                <button type="button" class="btn btn-primary inicio" style="display:<%= !isLogin?"none":"initial" %>">Mi cuenta</button>
-                <button type="button" class="btn btn-primary inicio" style="display:<%= !isLogin?"none":"initial" %>">salir</button>
+                <a href="/homebanking/usuario/viewUser" class="btn btn-primary inicio" style="display:<%= !isLogin?"none":"initial" %>">Mi cuenta</a>
+                <a class="btn btn-primary inicio" href="/homebanking/usuario/logoutUser" style="display:<%= !isLogin?"none":"initial" %>">salir</a>
             </div>
         </nav>
     </header>
