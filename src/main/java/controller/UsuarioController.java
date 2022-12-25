@@ -18,10 +18,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import model.Usuario;
 
-/**
- *
- * @author jose
- */
 @WebServlet(name = "UsuarioController", urlPatterns = {"/usuario/*"})
 public class UsuarioController extends HttpServlet {
 
